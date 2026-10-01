@@ -2,8 +2,9 @@
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Menu, Moon, Sun } from "lucide-react";
 import { profile } from "@/lib/data";
+import Whatsapp from "./Whatsapp";
 
-const links = ["home", "about", "experience", "projects", "services", "education", "recommendation"];
+const links = ["home", "about", "experience", "projects", "services", "education", "contact"];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -55,10 +56,11 @@ export default function Navbar() {
             ))}
           </div>
           <div className="flex items-center gap-2">
-            <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={icon}><Github size={16} /></a>
-            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={icon}><Linkedin size={16} /></a>
-            <button aria-label="Toggle theme" onClick={toggleTheme} className={icon}>{dark ? <Sun size={16} /> : <Moon size={16} />}</button>
-            <a href={profile.resume} target="_blank" className="ml-1 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium transition hover:bg-foreground hover:text-background">Resume</a>
+            <a href={profile.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={icon}><Github color="rgb(var(--accent))" size={16} /></a>
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={icon}><Linkedin color="rgb(var(--accent))" size={16} /></a>
+            <a href={profile.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className={icon}><Whatsapp /></a>
+            <button aria-label="Toggle theme" onClick={toggleTheme} className={icon}>{dark ? <Sun color="rgb(var(--accent))" size={16} /> : <Moon color="rgb(var(--accent))" size={16} />}</button>
+            <a href={profile.resume} target="_blank" className="ml-1 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium transition hover:bg-foreground hover:bg-[rgb(var(--accent))] hover:text-background">Resume</a>
           </div>
         </div>
       </nav>
