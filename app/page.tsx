@@ -17,7 +17,8 @@ export default function Page() {
         {/* Hero */}
         <section id="home" className="grid min-h-[86vh] scroll-mt-28 items-center gap-10 py-10 md:grid-cols-[1.2fr_0.8fr]">
           <div>
-            <h1 className="font-serif text-5xl !leading-[80px] tracking-normal md:text-7xl">{profile.headline}</h1>
+            {/* <h1 className="font-serif text-5xl !leading-[80px] tracking-normal md:text-7xl">{profile.headline}</h1> */}
+            <h1 className="font-serif text-5xl !leading-[55px] tracking-normal md:text-7xl md:!leading-[80px]">{profile.headline}</h1>
             <p className="mt-5 max-w-2xl text-base md:text-lg">{profile.tagline}</p>
             <a href="#projects" className="mt-8 inline-flex items-center gap-2 rounded-full bg-[rgb(var(--accent))] px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-95">
               View Projects <ArrowUpRight size={15} />
@@ -116,7 +117,7 @@ export default function Page() {
                 <div className="flex flex-wrap gap-2">{p.stack.map((s) => <span key={s} className={chip}>{s}</span>)}</div>
                 {p.link && (
                   <div className="mt-7 border-t border-border pt-6">
-                    <a href={p.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-2xl bg-[rgb(var(--accent-2))] px-5 py-3 text-sm font-semibold text-white transition hover:scale-[1.02]">
+                    <a href={p.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-2xl bg-[rgb(var(--accent))] px-5 py-3 text-sm font-semibold text-white transition hover:scale-[1.02]">
                       Live Project <ArrowUpRight size={16} />
                     </a>
                   </div>

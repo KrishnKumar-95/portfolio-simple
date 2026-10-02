@@ -81,6 +81,65 @@ export const experience = [
 
 export const projects = [
   {
+    title: "Curotiva",
+    summary:
+      "A wellness platform enabling therapist booking, real-time communication, queue management, and usage-based billing.",
+    impact:
+      "Scaled real-time communication to 50,000+ users and reduced matchmaking response time by 40%.",
+    challenge:
+      "Building reliable real-time chat and queue systems while handling high concurrency and accurate per-minute billing.",
+    highlights: [
+      "Built WebSocket architecture for real-time chat and queue updates.",
+      "Implemented Redis-backed queue management using Amazon ElastiCache.",
+      "Built therapist booking and real-time queue assignment workflows.",
+      "Implemented usage-based billing with 35% improved billing accuracy.",
+      "Delivered production-ready Agora audio calling for high concurrency.",
+    ],
+    stack: [
+      "Java",
+      "Spring Boot",
+      "WebSockets",
+      "MongoDB",
+      "Redis",
+      "Amazon ElastiCache",
+      "Agora",
+      "Twilio",
+      "Cashfree",
+    ],
+    link: "https://play.google.com/store/apps/details?id=com.curotiva.support",
+  },
+
+  {
+    title: "Pleezr",
+    summary:
+      "A feature-rich dating application with subscriptions, gamification, messaging, notifications, and user verification.",
+    impact:
+      "Reduced API response times by 60% through MongoDB query optimization and advanced filtering.",
+    challenge:
+      "Optimizing data-heavy APIs while supporting payments, real-time communication, media uploads, and engagement features.",
+    highlights: [
+      "Optimized MongoDB queries and advanced filters for 60% faster responses.",
+      "Implemented Stripe subscriptions, metered billing, and payment webhooks.",
+      "Built gamification, referrals, profile boosts, and verification workflows.",
+      "Integrated Socket.IO, Twilio, Firebase notifications, and AWS S3.",
+      "Configured AWS EC2 deployment with GitHub Actions CI/CD.",
+    ],
+    stack: [
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "React",
+      "Socket.IO",
+      "Stripe",
+      "Twilio",
+      "AWS EC2",
+      "AWS S3",
+      "GitHub Actions",
+    ],
+    link: "https://play.google.com/store/apps/details?id=com.pleezr.app",
+  },
+  {
     title: "TukTukLove",
     summary:
       "A scalable dating platform with real-time matching, messaging, voice calling, subscriptions, and gamification.",
@@ -112,67 +171,6 @@ export const projects = [
     ],
     link: "",
   },
-
-  {
-    title: "Curotiva",
-    summary:
-      "A wellness platform enabling therapist booking, real-time communication, queue management, and usage-based billing.",
-    impact:
-      "Scaled real-time communication to 50,000+ users and reduced matchmaking response time by 40%.",
-    challenge:
-      "Building reliable real-time chat and queue systems while handling high concurrency and accurate per-minute billing.",
-    highlights: [
-      "Built WebSocket architecture for real-time chat and queue updates.",
-      "Implemented Redis-backed queue management using Amazon ElastiCache.",
-      "Built therapist booking and real-time queue assignment workflows.",
-      "Implemented usage-based billing with 35% improved billing accuracy.",
-      "Delivered production-ready Agora audio calling for high concurrency.",
-    ],
-    stack: [
-      "Java",
-      "Spring Boot",
-      "WebSockets",
-      "MongoDB",
-      "Redis",
-      "Amazon ElastiCache",
-      "Agora",
-      "Twilio",
-      "Cashfree",
-    ],
-    link: "",
-  },
-
-  {
-    title: "Pleezr",
-    summary:
-      "A feature-rich dating application with subscriptions, gamification, messaging, notifications, and user verification.",
-    impact:
-      "Reduced API response times by 60% through MongoDB query optimization and advanced filtering.",
-    challenge:
-      "Optimizing data-heavy APIs while supporting payments, real-time communication, media uploads, and engagement features.",
-    highlights: [
-      "Optimized MongoDB queries and advanced filters for 60% faster responses.",
-      "Implemented Stripe subscriptions, metered billing, and payment webhooks.",
-      "Built gamification, referrals, profile boosts, and verification workflows.",
-      "Integrated Socket.IO, Twilio, Firebase notifications, and AWS S3.",
-      "Configured AWS EC2 deployment with GitHub Actions CI/CD.",
-    ],
-    stack: [
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "React",
-      "Socket.IO",
-      "Stripe",
-      "Twilio",
-      "AWS EC2",
-      "AWS S3",
-      "GitHub Actions",
-    ],
-    link: "",
-  },
-
   {
     title: "HealthCore",
     summary:
@@ -196,7 +194,7 @@ export const projects = [
       "DevExtreme",
       "SSO",
     ],
-    link: "",
+    link: "https://healthcoretech.com",
   },
 
   {
@@ -222,7 +220,7 @@ export const projects = [
       "Node.js",
       "Aggregation Pipeline",
     ],
-    link: "",
+    link: "https://genicassets.com",
   },
 ];
 

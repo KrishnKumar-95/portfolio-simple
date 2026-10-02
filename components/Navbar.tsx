@@ -60,7 +60,7 @@ export default function Navbar() {
             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className={icon}><Linkedin color="rgb(var(--accent))" size={16} /></a>
             <a href={profile.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className={icon}><Whatsapp /></a>
             <button aria-label="Toggle theme" onClick={toggleTheme} className={icon}>{dark ? <Sun color="rgb(var(--accent))" size={16} /> : <Moon color="rgb(var(--accent))" size={16} />}</button>
-            <a href={profile.resume} target="_blank" className="ml-1 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium transition hover:bg-foreground hover:bg-[rgb(var(--accent))] hover:text-background">Resume</a>
+            <a href={profile.resume} target="_blank" className="ml-1 rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium transition hover:bg-[rgb(var(--accent))] hover:text-background">Resume</a>
           </div>
         </div>
       </nav>
